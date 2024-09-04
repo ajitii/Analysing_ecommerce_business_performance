@@ -50,6 +50,12 @@ Create a new PostgreSQL database.
 Import the CSV files from the dataset folder into your database following the structure defined above.
 Make sure to create the appropriate tables and relationships as described.
 
+![image](https://user-images.githubusercontent.com/77976107/173325369-97674007-82ba-42e1-92eb-52c7bd6bcf59.png)
+<br>Figure 1. Data Relationship
+
+![image](https://user-images.githubusercontent.com/77976107/173325708-61b334a7-d55b-466c-9055-39ea48c60869.png)
+<br>Figure 2. Entity Relationship Diagram
+
 
 ## Usage
 1.Open your SQL environment (e.g., pgAdmin, MySQL).
@@ -91,6 +97,28 @@ Key Insights
 Effective visualizations are crucial in understanding the data. Below are some example visualizations that could be included in this project:
 
 1. Customer Growth Over Time
+![image](https://user-images.githubusercontent.com/77976107/173325968-5e8e23a5-59f4-4450-aed8-551590d00883.png)
+
+2. Top Selling Product Categories
+![image](https://user-images.githubusercontent.com/77976107/173326674-9c184bc8-cc65-4b69-a7d9-1d97dc33f94f.png)
+
+3. Payment Method Preferences
+![image](https://user-images.githubusercontent.com/77976107/173327174-1d594f7c-c2e6-4bb6-9c3b-b8503e9b2fbb.png)
+
+## Future Improvements
+-Enhance Documentation: Provide more elaborate explanations of each analysis step.
+-Add Predictive Analytics: Incorporate machine learning models to forecast future sales trends.
+-Expand Dataset: Include more recent data to assess ongoing trends and patterns.
+-User Interface: Develop a web interface or app for easier data interaction and exploration.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## License
+## Acknowledgments
+Rakamin Academy for providing the dataset.
+Tools and resources used for data visualization like Google Data Studio and Tableau.
+
 
 
 
