@@ -22,33 +22,33 @@ Measuring business performance is essential for any eCommerce company to assess 
 ## Dataset
 The dataset used for this analysis is sourced from Rakamin Academy. It includes:
 
--Order Status: The current status of each order.
--Price: The total cost of the purchase.
--Payment Method: Types of payment made by customers.
--Customer Demographics: Information regarding customer locations and preferences.
--Product Attributes: Information about the products purchased.
--Customer Reviews: Feedback provided by customers.
+- Order Status: The current status of each order.
+- Price: The total cost of the purchase.
+- Payment Method: Types of payment made by customers.
+- Customer Demographics: Information regarding customer locations and preferences.
+- Product Attributes: Information about the products purchased.
+- Customer Reviews: Feedback provided by customers.
 
 ## Dataset Structure
 Column Name	Description
-order_id	Unique identifier for each order
-product_category	Category of the product
-customer_id	Unique identifier for each customer
-payment_type	Method of payment used
-order_status	Status of the order
-order_date	Date when the order was placed
-revenue	Revenue generated from the sale
+- order_id	Unique identifier for each order
+- product_category	Category of the product
+- customer_id	Unique identifier for each customer
+- payment_type	Method of payment used
+- order_status	Status of the order
+- order_date	Date when the order was placed
+- revenue	Revenue generated from the sale
 
 ## Installation
 Prerequisites
-SQL Database: PostgreSQL or similar relational database system
-Python (optional for data visualization)
-Visualization Tools: Google Data Studio or Tableau (for generating interactive dashboards)
+- SQL Database: PostgreSQL or similar relational database system
+- Python (optional for data visualization)
+- Visualization Tools: Google Data Studio or Tableau (for generating interactive dashboards)
 
 # Setup Database
-Create a new PostgreSQL database.
-Import the CSV files from the dataset folder into your database following the structure defined above.
-Make sure to create the appropriate tables and relationships as described.
+- Create a new PostgreSQL database.
+- Import the CSV files from the dataset folder into your database following the structure defined above.
+- Make sure to create the appropriate tables and relationships as described.
 
 ![image](https://user-images.githubusercontent.com/77976107/173325369-97674007-82ba-42e1-92eb-52c7bd6bcf59.png)
 <br>Figure 1. Data Relationship
@@ -58,40 +58,40 @@ Make sure to create the appropriate tables and relationships as described.
 
 
 ## Usage
-1.Open your SQL environment (e.g., pgAdmin, MySQL).
-2.Run the provided SQL scripts located in the Query folder to analyze the dataset.
-3.Generate insights on customer behavior, product quality, and payment types.
+- 1.Open your SQL environment (e.g., pgAdmin, MySQL).
+- 2.Run the provided SQL scripts located in the Query folder to analyze the dataset.
+- 3.Generate insights on customer behavior, product quality, and payment types.
 
 # Sample Queries
--Top Selling Products:
+- Top Selling Products:
 
 sql:
-SELECT product_category, SUM(revenue) AS total_revenue
-FROM orders
-GROUP BY product_category
-ORDER BY total_revenue DESC;
+- SELECT product_category, SUM(revenue) AS total_revenue
+- FROM orders
+- GROUP BY product_category
+- ORDER BY total_revenue DESC;
 
--Customer Growth Over Time:
+- Customer Growth Over Time:
 
-sql:
-SELECT DATE_TRUNC('month', order_date) AS month, COUNT(DISTINCT customer_id) AS new_customers
-FROM orders
-GROUP BY month
-ORDER BY month;
+- sql:
+- SELECT DATE_TRUNC('month', order_date) AS month, COUNT(DISTINCT customer_id) AS new_customers
+- FROM orders
+- GROUP BY month
+- ORDER BY month;
 
 ## Analysis Methods
 This project employs the following analysis methods:
 
--Descriptive Statistics: To summarize the main characteristics of the data.
--Trend Analysis: To track changes in customer growth and sales over time.
--Cohort Analysis: To evaluate customer behavior segments based on purchase patterns.
--Data Visualization: Utilizing Google Data Studio for interactive dashboards.
+- Descriptive Statistics: To summarize the main characteristics of the data.
+- Trend Analysis: To track changes in customer growth and sales over time.
+- Cohort Analysis: To evaluate customer behavior segments based on purchase patterns.
+- Data Visualization: Utilizing Google Data Studio for interactive dashboards.
 
 ## Results and Insights
 Key Insights
--Customer Growth: Analyze the trends in new customer acquisition across different timeframes.
--Revenue Generation: Identify product categories with the highest and lowest sales performance.
--Payment Preferences: Evaluate shifts in payment methods over the years, identifying opportunities for targeted marketing.
+- Customer Growth: Analyze the trends in new customer acquisition across different timeframes.
+- Revenue Generation: Identify product categories with the highest and lowest sales performance.
+- Payment Preferences: Evaluate shifts in payment methods over the years, identifying opportunities for targeted marketing.
 
 ## Visualizations
 Effective visualizations are crucial in understanding the data. Below are some example visualizations that could be included in this project:
@@ -106,10 +106,10 @@ Effective visualizations are crucial in understanding the data. Below are some e
 ![image](https://user-images.githubusercontent.com/77976107/173327174-1d594f7c-c2e6-4bb6-9c3b-b8503e9b2fbb.png)
 
 ## Future Improvements
--Enhance Documentation: Provide more elaborate explanations of each analysis step.
--Add Predictive Analytics: Incorporate machine learning models to forecast future sales trends.
--Expand Dataset: Include more recent data to assess ongoing trends and patterns.
--User Interface: Develop a web interface or app for easier data interaction and exploration.
+- Enhance Documentation: Provide more elaborate explanations of each analysis step.
+- Add Predictive Analytics: Incorporate machine learning models to forecast future sales trends.
+- Expand Dataset: Include more recent data to assess ongoing trends and patterns.
+- User Interface: Develop a web interface or app for easier data interaction and exploration.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
