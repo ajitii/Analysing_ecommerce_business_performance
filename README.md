@@ -4,17 +4,17 @@
 This project provides a comprehensive analysis of eCommerce business performance by examining critical factors such as customer growth, product quality, and payment types. Utilizing SQL for data analysis and visualization tools for presenting findings, this project aims to offer actionable insights that can help optimize business strategies.
 
 ## Table of Contents
-1.Project Background
-2.Dataset
-3.Installation
-4.Usage
-5.Analysis Methods
-6.Results and Insights
-7.Visualizations
-8.Future Improvements
-9.Contributing
-10.License
-11.Acknowledgments
+- 1.Project Background
+- 2.Dataset
+- 3.Installation
+- 4.Usage
+- 5.Analysis Methods
+- 6.Results and Insights
+- 7.Visualizations
+- 8.Future Improvements
+- 9.Contributing
+- 10.License
+- 11.Acknowledgments
 
 ## Project Background
 Measuring business performance is essential for any eCommerce company to assess market trends, understand customer behavior, and identify new opportunities. This project utilizes a dataset consisting of 100,000 orders made at various marketplaces in Brazil from 2016 to 2018.
